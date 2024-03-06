@@ -12,7 +12,12 @@ const Card = () => {
             </div>
            </div>
         <div className='card-front-side'>
-
+            <div className='card-icn'></div>
+            <h3 className='card-number'>0000 0000 0000 0000</h3>
+            <div className='expiration-date-section'>
+                <h4>JANE APPLESEED</h4>
+                <span>00/00</span>
+            </div>
         </div>
         </div>
     </div>
