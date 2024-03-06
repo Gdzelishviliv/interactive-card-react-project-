@@ -1,0 +1,54 @@
+.card-container {
+  display: flex;
+  justify-content: center;
+  height: 240px;
+  background:url(./../../assets/body-background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.card-front-side {
+  width: 285px;
+  height: 156.208px;
+  border-radius: 6px;
+  background: url(.../../../../assets/bacground-card.svg);
+  background-size: cover;
+  position: absolute;
+  right: 57px;
+}
+.card-back-side {
+  position: relative;
+  width: 286px;
+  height: 157px;
+  border-radius: 6px;
+  background: linear-gradient(169deg, #fff 5%, #d2d3d9 91.69%);
+  margin-top: 32px;
+}
+.card-back-line {
+  margin-top: 14.74px;
+  height: 34px;
+  background: #2f2f2f;
+}
+.card-cvc-section {
+  padding-inline: 26px;
+}
+.cvc-container {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  width: 230.975px;
+  height: 29.739px;
+  background-color: #adb5be;
+  border-radius: 3.5px;
+  margin-top: 15.38px;
+}
+.cvc {
+  color: var(--White, #fff);
+  font-family: "Space Grotesk";
+  font-size: 9px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 1.286px;
+  text-transform: uppercase;
+  margin-right: 10.79px;
+}
