@@ -1,0 +1,63 @@
+.inputs-container {
+  display: grid;
+  justify-content: center;
+  margin-top: 91px;
+}
+.inputs-container label {
+  color: var(--Deep-Violet, #21092f);
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: "Space Grotesk";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+.inputs-container input {
+  width: 327px;
+  height: 45px;
+  border-radius: 8px;
+  border: 1px solid var(--Light-Grey, #dfdee0);
+  background: var(--White, #fff);
+  padding: 11px 16px;
+  margin-top: 9px;
+}
+.inputs-container input::placeholder {
+  font-family: "Space Grotesk";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  color: var(--Deep-Violet, #21092f);
+  font-feature-settings: "clig" off, "liga" off;
+  opacity: 0.25;
+}
+.inputs-container input:focus{
+    outline: none;
+    border: 1px solid var(--Gradient, #6348FE);
+    transition: 0.5s;
+}
+.month-year>div>input{
+    width: 72px;
+}
+#cvc-inp{
+    width: 164px;
+}
+.cvc-div{
+    display: flex;
+    flex-direction: column;
+    margin-left: 11px;
+}
+.cvc-div > label{
+    margin: 0px;
+}
+.mm-yy{
+    display: flex;
+    gap: 10px;
+}
+.exp-date-cvc{
+    display: flex;
+    margin-top: 20px;
+}
