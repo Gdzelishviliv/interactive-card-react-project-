@@ -6,24 +6,24 @@
   width: 327px;
 }
 .submited-logo {
-  background-image: url(./../../assets/submited.svg);
+  background-image: url(../../assets/submited.svg);
   background-repeat: no-repeat;
   width: 80px;
   height: 80px;
   margin-bottom: 30px;
 }
-.confirm-btn{
-    width: 327px;
-    margin-top: 48px;
+.confirm-btn {
+  width: 327px;
+  margin-top: 40px;
 }
-h1{
-    color: #21092F;
-    font-size: 28px;
-    font-weight: 500;
-    letter-spacing: 3.422px;
+h1 {
+  color: #21092f;
+  font-size: 28px;
+  font-weight: 500;
+  letter-spacing: 3.422px;
 }
-p{
-    color: #8F8694;
-    font-size: 18px;
-    font-weight: 500;
+p {
+  color: #8f8694;
+  font-size: 18px;
+  font-weight: 500;
 }

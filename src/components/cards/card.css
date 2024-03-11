@@ -25,6 +25,7 @@
   margin-top: 32px;
 }
 .card-back-line {
+  width: 100%;
   margin-top: 14.74px;
   height: 34px;
   background: #2f2f2f;
@@ -83,4 +84,63 @@
   line-height: normal;
   letter-spacing: 1.286px;
   text-transform: uppercase;
+}
+@media screen and (min-width: 1200px) {
+  .card-container {
+    height: auto;
+    width: 483px;
+  }
+  .card-back-side {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    bottom: 100px;
+    left: 258px;
+    width: 447px;
+    height: 245px;
+  }
+  .card-front-side {
+    width: 447px;
+    height: 245px;
+    bottom: 270px;
+    right: 92px;
+    padding-inline: 32px;
+  }
+  .card-back-line {
+    height: 54px;
+    margin-top: 32px;
+  }
+  .cvc-container {
+    width: 361px;
+    height: 38px;
+  }
+  .card-icn {
+    background-image: url(.///../../assets/card-circle-pc.svg);
+    background-repeat: no-repeat;
+    width: 84px;
+    height: 47px;
+  }
+  .card-number {
+    font-size: 28px;
+    font-weight: 500;
+    letter-spacing: 3.422px;
+    margin-top: 64px;
+  }
+  .expiration-date-section {
+    font-size: 14px;
+    letter-spacing: 2px;
+    margin-top: 25px;
+  }
+  .cvc {
+    font-size: 14px;
+    letter-spacing: 2px;
+  }
+  .card-backside-picture {
+    background-image: url(../../assets/card-backside-pic.svg);
+    background-repeat: no-repeat;
+    width: 186px;
+    height: 26px;
+    margin-top: 33px;
+  }
 }

@@ -1,4 +1,4 @@
-*{
+* {
   font-family: "Space Grotesk";
 }
 .inputs-container {
@@ -40,6 +40,7 @@
   outline: none;
   border: 1px solid var(--Gradient, #6348fe);
   transition: 0.5s;
+  cursor: pointer;
 }
 .month-year > div > input {
   width: 72px;
@@ -78,15 +79,23 @@
   border: transparent;
   cursor: pointer;
 }
-.confirm-btn:hover{
-  background: linear-gradient(164deg, #6348FE 4.74%, #610595 88.83%);
+.confirm-btn:hover {
+  background: linear-gradient(164deg, #6348fe 4.74%, #610595 88.83%);
 }
-.error-message{
- color: #FF5050;
- font-size: 12px; 
- font-weight: 500;
- margin-top: 8px;
+.error-message {
+  color: #ff5050;
+  font-size: 12px;
+  font-weight: 500;
+  margin-top: 8px;
 }
 .inputs-container .error-input {
   border: 1px solid red;
+}
+@media screen and (min-width: 1200px) {
+  .inputs-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    margin-left: 349px;
+  }
 }
