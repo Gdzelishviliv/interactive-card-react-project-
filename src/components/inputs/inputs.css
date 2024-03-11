@@ -1,7 +1,11 @@
+*{
+  font-family: "Space Grotesk";
+}
 .inputs-container {
   display: grid;
   justify-content: center;
   margin-top: 91px;
+  margin-bottom: 45px;
 }
 .inputs-container label {
   color: var(--Deep-Violet, #21092f);
@@ -49,6 +53,7 @@
   display: flex;
   flex-direction: column;
   margin-left: 11px;
+  padding-top: 5px;
 }
 .cvc-div > label {
   margin: 0px;
@@ -73,5 +78,15 @@
   line-height: normal;
   height: 53px;
   margin-top: 28px;
+  border: transparent;
   cursor: pointer;
+}
+.confirm-btn:hover{
+  background: linear-gradient(164deg, #6348FE 4.74%, #610595 88.83%);
+}
+.error-message{
+ color: #FF5050;
+ font-size: 12px; 
+ font-weight: 500;
+ margin-top: 8px;
 }
