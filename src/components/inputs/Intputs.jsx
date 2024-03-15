@@ -101,35 +101,50 @@ const Intputs = ({ onUpdateCardInfo }) => {
     <div className="inputs-container">
       {!confirmationSuccess ? (
         <>
-          <label htmlFor="Cardholder Name">Cardholder Name</label>
+          <label>Cardholder Name</label>
           <input
             type="text"
             placeholder="e.g. Jane Appleseed"
             value={cardHolderName}
             onChange={(e) => setCardHolderName(e.target.value)}
+            onKeyDown={(e) => {
+              if (e.key === "Enter") {
+                handleConfirm();
+              }
+            }}
             className={errors.cardHolderName ? "error-input" : ""}
           />
           <div className="error-message">{errors.cardHolderName}</div>
 
-          <label htmlFor="Card Number">Card Number</label>
+          <label>Card Number</label>
           <input
             type="text"
             placeholder="e.g. 1234 5678 9123 0000"
             value={cardNumber}
             onChange={(e) => setCardNumber(e.target.value)}
+            onKeyDown={(e) => {
+              if (e.key === "Enter") {
+                handleConfirm();
+              }
+            }}
             className={errors.cardNumber ? "error-input" : ""}
           />
           <div className="error-message">{errors.cardNumber}</div>
 
           <div className="exp-date-cvc">
             <div className="month-year">
-              <label htmlFor="Exp. Date (MM/YY)">Exp. Date (MM/YY)</label>
+              <label>Exp. Date (MM/YY)</label>
               <div className="mm-yy">
                 <input
                   type="number"
                   placeholder="MM"
                   value={expirationMonth}
                   onChange={(e) => setExpirationMonth(e.target.value)}
+                  onKeyDown={(e) => {
+                    if (e.key === "Enter") {
+                      handleConfirm();
+                    }
+                  }}
                   className={errors.expirationMonth ? "error-input" : ""}
                 />
                 <input
@@ -137,19 +152,29 @@ const Intputs = ({ onUpdateCardInfo }) => {
                   placeholder="YY"
                   value={expirationYear}
                   onChange={(e) => setExpirationYear(e.target.value)}
+                  onKeyDown={(e) => {
+                    if (e.key === "Enter") {
+                      handleConfirm();
+                    }
+                  }}
                   className={errors.expirationMonth ? "error-input" : ""}
                 />
               </div>
               <div className="error-message">{errors.expirationMonth}</div>
             </div>
             <div className="cvc-div">
-              <label htmlFor="CVC">CVC</label>
+              <label>CVC</label>
               <input
                 type="number"
                 placeholder="e.g. 123"
                 id="cvc-inp"
                 value={cvc}
                 onChange={(e) => setCvc(e.target.value)}
+                onKeyDown={(e) => {
+                  if (e.key === "Enter") {
+                    handleConfirm();
+                  }
+                }}
                 className={errors.cvc ? "error-input" : ""}
               />
               <div className="error-message">{errors.cvc}</div>
